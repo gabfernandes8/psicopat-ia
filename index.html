@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./view/src/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./view/src/css/output.css">
+    <script src="./view/src/js/login.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <title>PSICOPAT - IA</title>
 </head>
 <body class="h-screen bg-branco grid grid-cols-[45vw_1fr]">
@@ -38,7 +40,7 @@
                 <input type="password" id="psswrd" class="bg-branco border-2 border-marronzinho rounded-lg h-16 w-[25vw] focus:outline-none font-fontP p-2">
             </div>
 
-            <button type="button" class="bg-marromClaro rounded-xl h-14 w-48 font-fontTTPD text-white text-3xl">
+            <button type="button" id="botao" class="bg-marromClaro rounded-xl h-14 w-48 font-fontTTPD text-white text-3xl">
                 LOGIN
             </button>
         </form>
