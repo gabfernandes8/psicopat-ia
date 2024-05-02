@@ -8,24 +8,24 @@ const perText = document.getElementById('perguntaText')
 const resTextEn = document.getElementById('responseText')
 const perTextEn = document.getElementById('questionText')
 
-// const loadAnimation = () => {
-//     let time = 700
+const loadAnimation = () => {
+    let time = 700
 
-//     for (let text of loadText.children){
+    for (let text of loadText.children){
 
-//         setTimeout(() => {
-//                 text.classList.remove('opacity-0')
+        setTimeout(() => {
+                text.classList.remove('opacity-0')
             
-//         }, time);
+        }, time);
 
-//         time+=700
-//     }
+        time+=700
+    }
 
-//     setTimeout(() => {
-//         load.classList.add('hidden')
-//     }, time);
+    setTimeout(() => {
+        load.classList.add('hidden')
+    }, time);
 
-// }
+}
 
 const translate = async(text) => {
 
@@ -97,7 +97,7 @@ respPT.addEventListener('keypress', (e) => {
 })
 
 window.addEventListener('load', () => {
-    // loadAnimation()
+    loadAnimation()
     load.classList.add('hidden')
 
 })
