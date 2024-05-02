@@ -58,6 +58,15 @@ const validarLogin = async () => {
 
 }
 
-button.addEventListener('click', () => {
-    validarLogin()
+button.addEventListener('click', validarLogin)
+
+user.addEventListener('keypress', (e) => {
+    if(e.key === 'Enter'){
+        validarLogin()
+    }
+})
+password.addEventListener('keypress', (e) => {
+    if(e.key === 'Enter'){
+        validarLogin()
+    }
 })

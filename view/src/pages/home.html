@@ -11,21 +11,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/output.css">
+    <script src="../js/home.js" defer></script>
     <title>PSICOPAT - IA</title>
 </head>
 <body class="h-screen w-screen bg-branco grid grid-rows-[1fr_20vh] items-center justify-center">
     <main class="translate-y-[10vh]">
         <div class="hidden flex flex-col items-center gap-8">
             <img src="../img/logo.png" alt="" class="w-16 h-16">
-        <p class="font-fontTTPD text-marromClaro text-3xl">
-            how can i help you today?
-        </p>
+            <p class="font-fontTTPD text-marromClaro text-3xl">
+                how can i help you today?
+            </p>
         </div>
-        
+
+        <!-- div principal -->
+        <section class="">
+            <div class="grid grid-cols-[1fr_1px_1fr] px-96 gap-5 justify-between">
+
+                  <!-- div lado esquerdo -->
+                <div class="flex flex-col gap-8 px-32">
+
+                    <!-- div das perguntas -->
+                    <div class="flex gap-4 text-lg">
+                        <img src="../img/icone.png" alt="" class="shrink-0 h-10 w-10">
+                        <div class="">
+                            <h2 class="font-fontTTPD text-marromClaro font-bold">VOCÊ</h2>
+                            <span class="font-fontP text-marrom text-lg font-light">
+                                descreva a industria da musica
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- div das respostas -->
+                    <div class="flex gap-4 text-lg">
+                        <img src="../img/logo.png" alt="" class="shrink-0 h-10 w-10">
+                        <div class="">
+                            <h2 class="font-fontTTPD text-marromClaro font-bold">PSICOPAT-IA</h2>
+                            <span class="font-fontP text-marrom text-lg font-light">
+                                Taylor Alison Swift (Reading, 13 de dezembro de 1989) é uma cantora, compositora, atriz,  e roteirista norte-americana. Suas composições narrativas, muitas vezes inspiradas pelas suas experiências pessoais, têm recebido ampla cobertura mediática e elogios de críticos. Swift mudou-se para Nashville aos 14 anos de idade para se tornar uma cantora de música country, assinando um contrato de composição com a Sony/ATV Music Publishing em 2004 e um contrato de gravação com a Big Machine Records em 2005 e com a Universal Music em 2019.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[1px] h-96 bg-cinza"></div>
+
+                <!-- div da direita -->
+                <div class="flex flex-col gap-8 px-32">
+
+                <!-- div das perguntas -->
+                    <div class="flex gap-4 text-lg">
+                        <img src="../img/icone.png" alt="" class="shrink-0 h-10 w-10">
+                    <div class="">
+                        <h2 class="font-fontTTPD text-marromClaro font-bold">YOU</h2>
+                        <span class="font-fontP text-marrom text-lg font-light">
+                            describe the music industry
+                        </span>
+                    </div>
+                </div>
+
+                <!-- DIV DAS RESPOSTAS -->
+                <div class="flex gap-4 text-lg">
+                    <img src="../img/logo.png" alt="" class="shrink-0 h-10 w-10">
+                    <div class="">
+                        <h2 class="font-fontTTPD text-marromClaro font-bold">PSICOPAT-IA</h2>
+                        <span class="font-fontP text-marrom text-lg font-light">
+                            Taylor Alison Swift (Reading, December 13, 1989) is an American singer, songwriter, actress, and screenwriter. His narrative compositions, often inspired by his personal experiences, have received widespread media coverage and critical acclaim. Swift moved to Nashville at the age of 14 to become a country music singer, signing a songwriting contract with Sony/ATV Music Publishing in 2004 and a recording contract with Big Machine Records in 2005 and with Universal Music in 2019.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="sticky bottom-0 h-[20vh] flex items-center justify-center">
         <input type="text" placeholder="message Psicopat-IA..." class="placeholder:text-branco/60 bg-cinzaMarrom border-2 border-marronzinho rounded-lg h-12 w-[50vw] focus:outline-none font-fontTTPD text-xl text-branco p-2">
     </footer>
+
+    <div class="fixed inset-0 bg-greish p-[8vh] flex items-end duration-500 ease-linear" id="load">
+        <img src="../img/ttpd-bg.jpeg" alt="Gostosa" class="object-cover absolute h-[calc(100%-15vh)] w-[calc(100%-15vh)] -z-10">
+        <div class="font-fontTTPDT text-2xl text-greish tracking-[0.5rem] flex flex-col pl-24 pb-24 w-1/4 h-2/5" id="load-text">
+            <span class="opacity-0 ease-linear duration-75 translate-x-full"> I </span>
+            <span class="opacity-0 ease-linear duration-75 -translate-y-[1rem]"> AM </span>
+            <span class="opacity-0 ease-linear duration-75 translate-y-[2rem] translate-x-[1rem]"> ALLOWED </span>
+            <span class="opacity-0 ease-linear duration-75 translate-y-[3.5rem] translate-x-[6rem]"> TO </span>
+            <span class="opacity-0 ease-linear duration-75 translate-y-[4.5rem] translate-x-[14rem]"> CRY </span>
+            <span class="opacity-0 ease-linear duration-75 translate-y-[2rem] translate-x-[18.5rem]"> ? </span>
+        </div>
+    </div>
 </body>
 </html>
